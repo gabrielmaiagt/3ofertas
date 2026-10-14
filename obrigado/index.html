@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Compra confirmada</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Inter:wght@400;600;700&display=swap">
+  <style>
+    :root { --bg: #FFF9F2; --ink: #2A2233; --muted: #5A4F63; --green: #1FA855; --border: #F1E2D2; }
+    * { box-sizing: border-box; }
+    body { margin: 0; color: var(--ink); background: var(--bg); font: 400 16px/1.6 Inter, "Segoe UI", Arial, sans-serif; }
+    .wrap { width: min(520px, 100% - 32px); margin: 0 auto; padding: 56px 0 48px; text-align: center; }
+    .check { display: grid; width: 84px; height: 84px; margin: 0 auto 20px; place-items: center; border-radius: 50%; color: #fff; background: var(--green); font-size: 2.6rem; font-weight: 900; }
+    h1 { margin: 0 0 12px; font: 900 clamp(1.8rem, 7vw, 2.3rem)/1.1 Montserrat, Arial, sans-serif; letter-spacing: -.02em; }
+    p { margin: 0 auto 12px; max-width: 440px; color: var(--muted); }
+    ol { display: grid; gap: 10px; margin: 28px 0 0; padding: 0; list-style: none; counter-reset: step; text-align: left; }
+    li { position: relative; padding: 14px 16px 14px 58px; border: 1px solid var(--border); border-radius: 14px; background: #fff; counter-increment: step; }
+    li::before { content: counter(step); position: absolute; top: 14px; left: 16px; display: grid; width: 28px; height: 28px; place-items: center; border-radius: 50%; color: #fff; background: var(--ink); font: 800 .9rem/1 Montserrat, Arial, sans-serif; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <div class="check" aria-hidden="true">✓</div>
+    <h1>Compra confirmada!</h1>
+    <p>Obrigada pela confiança. O acesso ao seu material foi enviado para o e-mail que você informou na compra.</p>
+    <ol>
+      <li><strong>Abra o seu e-mail</strong> e procure a mensagem com o link de acesso.</li>
+      <li><strong>Não encontrou?</strong> Olhe também nas pastas Spam, Promoções e Atualizações.</li>
+      <li><strong>Pagou no Pix?</strong> O acesso chega assim que o pagamento é confirmado, normalmente em poucos minutos.</li>
+    </ol>
+  </main>
+</body>
+</html>
