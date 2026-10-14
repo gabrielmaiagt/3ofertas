@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+<rect width="1200" height="800" fill="#F4ECDD"/>
+<rect x="12" y="12" width="1176" height="776" fill="none" stroke="#B08D57" stroke-width="6" stroke-dasharray="24 16" rx="16"/>
+<text x="50%" y="44%" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="57" fill="#1E2A44">Vitrine de capas</text>
+<text x="50%" y="55.4%" text-anchor="middle" font-family="Arial,sans-serif" font-size="34" fill="#5E554C">3 capas de estilos diferentes lado a lado</text>
+<text x="50%" y="65.4%" text-anchor="middle" font-family="Arial,sans-serif" font-size="25" fill="#5E554C">IMAGEM PROVISÓRIA · 1200×800</text>
+</svg>

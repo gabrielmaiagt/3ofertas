@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#FFE3E3"/><stop offset=".5" stop-color="#FFF4D6"/><stop offset="1" stop-color="#DDF6F3"/></linearGradient></defs>
+<rect width="1080" height="1350" fill="url(#g)"/>
+<rect x="14" y="14" width="1052" height="1322" fill="none" stroke="#2A2233" stroke-opacity=".35" stroke-width="6" stroke-dasharray="26 18" rx="28"/>
+<text x="50%" y="46%" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="67" fill="#2A2233">Foto 3 · girador de flores</text>
+<text x="50%" y="53.4%" text-anchor="middle" font-family="Arial,sans-serif" font-size="36" fill="#5A4F63">girassol ou margarida, varanda ou jardim</text>
+<text x="50%" y="59.4%" text-anchor="middle" font-family="Arial,sans-serif" font-size="30" fill="#5A4F63">IMAGEM PROVISÓRIA · 1080×1350</text>
+</svg>
