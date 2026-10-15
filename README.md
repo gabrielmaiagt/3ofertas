@@ -13,3 +13,13 @@ Upsell único dos 3 funis (Kit Divulgação da Artesã): `/upsell/`. Quem recusa
 Domínio: https://superprodutos.netlify.app
 
 Checkouts na Cakto, configurados em `assets/product-config*.js` de cada oferta. Imagens para cadastrar no painel da Cakto em `imagens-cakto/`.
+
+## Áreas de membros (app)
+
+| Oferta | Plano básico | Plano completo |
+|---|---|---|
+| Laço | `/area/laco/basico/` | `/area/laco/completo/` |
+| Capa de Bíblia | `/area/capa-biblia/basico/` | `/area/capa-biblia/completo/` |
+| Girador | `/area/girador/basico/` | `/area/girador/premium/` |
+
+O conteúdo de cada área fica no `window.AREA` do `index.html` dela. Para liberar um material, cole o link (Drive, YouTube não listado etc.) no campo `"url"` da aula. Aula sem link aparece como "Liberado em breve".
