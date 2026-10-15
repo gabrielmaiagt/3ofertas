@@ -69,14 +69,14 @@
       letter-spacing: .05em;
       text-transform: uppercase;
     }
-    .hero h1 { font-size: clamp(2.1rem, 8vw, 3rem); font-weight: 900; }
+    .hero h1 { font-size: clamp(1.85rem, 7vw, 2.55rem); font-weight: 800; line-height: 1.15; letter-spacing: -.01em; }
     .hero h1 span {
-      background: linear-gradient(90deg, var(--coral), var(--purple));
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
+      padding: 0 .08em;
+      color: var(--button-hover);
+      background: linear-gradient(transparent 60%, #FFE08A 60%);
     }
-    .hero p { margin: 14px auto 0; max-width: 440px; color: var(--muted); font-size: 1.05rem; }
+    .hero p { margin: 16px auto 0; max-width: 460px; color: var(--muted); font-size: 1.05rem; }
+    .hero p strong { color: var(--ink); }
 
     .photos { display: grid; gap: 14px; margin: 26px 0; }
     .photos img { width: 100%; border-radius: var(--radius); box-shadow: var(--shadow); }
@@ -318,9 +318,9 @@
   <main>
     <section class="hero">
       <div class="wrap">
-        <span class="tag">Receitas em vídeo + PDF</span>
-        <h1>Giradores de Vento em <span>Crochê</span></h1>
-        <p>Peças coloridas que giram com o vento e enchem a casa de cor. Aprenda a fazer do primeiro ponto ao acabamento.</p>
+        <span class="tag">Renda extra com crochê</span>
+        <h1>Ganhe uma <span>renda extra</span> fazendo giradores de vento em crochê</h1>
+        <p>Peças coloridas que vendem o ano todo, e no Natal vendem ainda mais. <strong>Receitas em vídeo e PDF, do primeiro ponto ao acabamento</strong>, mesmo se você só sabe o básico.</p>
 
         <div class="photos">
           <img src="assets/girador-1-1080w.webp" srcset="assets/girador-1-540w.webp 540w, assets/girador-1-1080w.webp 1080w" sizes="(max-width: 592px) calc(100vw - 32px), 560px" alt="Girador de vento em crochê em espiral nas cores do arco-íris" width="1080" height="1080" decoding="async" fetchpriority="high">
