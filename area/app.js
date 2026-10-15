@@ -204,5 +204,12 @@
   const ios = /iphone|ipad|ipod/i.test(navigator.userAgent) && !navigator.standalone;
   if (ios) $("[data-install]").classList.add("is-visible");
 
+  // Sem módulos na aba "Aulas", a aba some e as outras se reorganizam.
+  if (!modules.some((m) => m.tab === "aulas")) {
+    $('[data-tab="aulas"]').remove();
+    $('[data-view="aulas"]').remove();
+    $(".tabbar__inner").style.gridTemplateColumns = "repeat(3, 1fr)";
+  }
+
   updateProgress();
 })();
