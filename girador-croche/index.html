@@ -311,10 +311,23 @@
       ["pointerdown", "touchend", "keydown"].forEach((type) =>
         addEventListener(type, () => { if (!history.state || !history.state.backRedirect) { armed = false; arm(); } }, { once: true, passive: true })
       );
+      const loadedAt = Date.now();
+      const wentKey = "went-checkout:" + location.pathname;
+      addEventListener("click", (e) => {
+        if (e.target.closest && e.target.closest("[data-checkout]")) { try { sessionStorage.setItem(wentKey, "1"); } catch {} }
+      }, true);
       addEventListener("popstate", (event) => {
         if (event.state && event.state.backRedirect) return;
+        // Alguns navegadores de app disparam um "voltar" falso logo ao abrir a página.
+        if (Date.now() - loadedAt < 1500) return;
         try { sessionStorage.setItem(flag, "1"); } catch {}
-        location.replace(target + location.search);
+        // brt = segundos na página antes de sair; brc = 1 se a pessoa já tinha ido ao checkout.
+        let went = "0";
+        try { went = sessionStorage.getItem(wentKey) ? "1" : "0"; } catch {}
+        const q = new URLSearchParams(location.search);
+        q.set("brt", String(Math.round((Date.now() - loadedAt) / 1000)));
+        q.set("brc", went);
+        location.replace(target + "?" + q.toString());
       });
     })();
   </script>

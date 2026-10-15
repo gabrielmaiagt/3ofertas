@@ -103,5 +103,15 @@
     })();
   </script>
   <script src="../assets/integrations.js" defer></script>
+  <script>
+    // Diagnóstico do back redirect: marca a venda na Cakto com o tempo na página e se a pessoa já tinha ido ao checkout.
+    addEventListener("load", () => {
+      const q = new URLSearchParams(location.search);
+      const tag = `back_t${q.get("brt") || "x"}_c${q.get("brc") || "x"}`;
+      document.querySelectorAll("[data-checkout]").forEach((a) => {
+        try { const u = new URL(a.href); u.searchParams.set("sck", tag); a.href = u.toString(); } catch {}
+      });
+    });
+  </script>
 </body>
 </html>
