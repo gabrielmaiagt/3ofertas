@@ -1,0 +1,21 @@
+{
+  "name": "Pulseiras em crochê",
+  "short_name": "Pulseiras",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#F6F2FF",
+  "theme_color": "#2A2233",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

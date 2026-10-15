@@ -1,0 +1,21 @@
+{
+  "name": "50 modelos de faixas para bebê",
+  "short_name": "Faixas",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#FBF6F9",
+  "theme_color": "#54334F",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

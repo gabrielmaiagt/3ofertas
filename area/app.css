@@ -180,3 +180,28 @@ button { font: inherit; }
 .tab span { font-size: 1.3rem; filter: grayscale(1); opacity: .7; }
 .tab.is-active { color: var(--primary); }
 .tab.is-active span { filter: none; opacity: 1; }
+
+/* aulas escritas */
+.article { margin: 4px 2px 18px; color: var(--ink); font-size: .97rem; line-height: 1.65; }
+.article h3 { margin: 22px 0 8px; font-size: 1.1rem; font-weight: 800; color: var(--primary); }
+.article h4 { margin: 16px 0 6px; font: 800 .98rem/1.3 Montserrat, Arial, sans-serif; }
+.article p { margin: 0 0 12px; }
+.article ul, .article ol { margin: 0 0 14px; padding-left: 22px; }
+.article li { margin-bottom: 6px; }
+.article table { width: 100%; margin: 6px 0 16px; border-collapse: collapse; font-size: .88rem; background: #fff; border-radius: 12px; overflow: hidden; }
+.article th, .article td { padding: 9px 10px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+.article th { color: #fff; background: var(--primary); font-weight: 700; }
+.article .tip { margin: 14px 0; padding: 12px 14px; border-left: 4px solid var(--accent); border-radius: 10px; background: #fff; }
+.article .tip strong:first-child { color: var(--accent); }
+.article .abbr { display: inline-block; padding: 1px 7px; border-radius: 6px; background: var(--bg); font-weight: 700; }
+.article .model { margin: 0 0 12px; padding: 14px; border: 1px solid var(--line); border-radius: 14px; background: #fff; }
+.article .model h4 { margin: 0 0 4px; }
+.article .model .tag { display: inline-block; margin: 0 6px 6px 0; padding: 2px 9px; border-radius: 999px; color: var(--primary); background: var(--bg); font-size: .74rem; font-weight: 700; }
+.article .model p { margin: 4px 0 0; font-size: .9rem; }
+.article .row { padding: 8px 10px; margin: 6px 0; border-radius: 10px; background: #fff; border: 1px solid var(--line); font-family: ui-monospace, Menlo, monospace; font-size: .86rem; }
+
+@media print {
+  .tabbar, .top, .view, .player__bar, .player__actions, .player__frame { display: none !important; }
+  .player { position: static; display: block !important; background: #fff; }
+  body { padding: 0; background: #fff; }
+}

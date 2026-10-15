@@ -27,8 +27,8 @@
 
   const typeIcon = { pdf: "📄", video: "🎬", yt: "▶", text: "📝" };
   const typeClass = { pdf: "is-pdf", yt: "is-yt" };
-  const typeLabel = { pdf: "Material em PDF", video: "Vídeo-aula", yt: "Vídeo", text: "Leitura" };
-  const isSoon = (l) => (l.type === "pdf" || l.type === "video") && !l.url;
+  const typeLabel = { pdf: "Material", video: "Aula", yt: "Vídeo", text: "Leitura" };
+  const isSoon = (l) => (l.type === "pdf" || l.type === "video") && !l.url && !l.html;
 
   const lessonRow = (l, locked) => `
     <button class="lesson ${done[l.id] ? "is-done" : ""} ${isSoon(l) ? "is-soon" : ""}" data-lesson="${esc(l.id)}" ${locked ? "disabled" : ""}>
@@ -157,12 +157,16 @@
       media = `<div class="player__frame"><iframe src="https://www.youtube-nocookie.com/embed/${esc(yt)}?rel=0" title="${esc(l.title)}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`;
     }
     let text = l.text ? `<p class="player__text">${esc(l.text)}</p>` : "";
+    if (l.html) text += `<article class="article">${l.html}</article>`;
     if (l.type === "yt") text += `<p class="player__text">Vídeo do canal <strong>${esc(l.channel)}</strong> no YouTube.</p>`;
     let actions = "";
     if (isSoon(l)) {
       actions += `<p class="player__text">Este material está sendo preparado e será liberado em breve nesta área.</p>`;
     } else if (l.url && !yt) {
       actions += `<a class="button" href="${esc(l.url)}" target="_blank" rel="noopener">${l.type === "pdf" ? "Abrir material" : "Assistir aula"}</a>`;
+    }
+    if (l.html) {
+      actions += `<button class="button button--ghost" type="button" onclick="window.print()">Imprimir ou salvar em PDF</button>`;
     }
     if (!isSoon(l)) {
       actions += `<button class="button ${done[l.id] ? "button--ghost" : ""}" type="button" data-done>${done[l.id] ? "Concluída ✓ (desmarcar)" : "Marcar como concluída"}</button>`;
