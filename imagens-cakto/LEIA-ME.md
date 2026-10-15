@@ -27,7 +27,9 @@ As ofertas de back redirect (oferta especial) ficam dentro dos produtos Kit/Prem
 |---|---|
 | 01-basico.jpg | Giradores de Vento em Crochê — Básico |
 | 02-premium.jpg | Giradores de Vento em Crochê — Premium + Coleção de Natal |
-| bump-bones.jpg | Bonés em Crochê — Receitas |
+| bump-pack-3em1.jpg | **Pack 3 em 1: Bonés, Pulseiras e Caminho de Mesa em Crochê** (bump atual) |
+| upsell.jpg | Varanda em Crochê (upsell) |
+| bump-bones.jpg | Bonés em Crochê — Receitas (bump antigo, desligado) |
 | bump-caminho-mesa-outono.jpg | Caminhos de Mesa de Outono em Crochê |
 | bump-pulseiras.jpg | Pulseiras em Crochê — Modelos Mais Vendidos |
 
